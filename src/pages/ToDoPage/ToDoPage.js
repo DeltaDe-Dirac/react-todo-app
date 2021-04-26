@@ -1,23 +1,27 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./ToDoPage.css";
 import { Container } from "react-bootstrap";
 import ToDoInput from "../../components/ToDoInput/ToDoInput";
 import ToDoList from "../../components/ToDoList/ToDoList";
 import ToDoTabs from "../../components/ToDoTabs/ToDoTabs";
+import TodoModel from "../../model/TodoModel";
 
 export default function ToDoPage() {
-  const [todos, setTodos] = useState([
-    "Buy products in a grocery store",
-    " Schedule an appointment",
-    "Send CV and get your next job",
-    "Start your react final project",
-    "Be patient, motivated, disciplined and kind",
-    "Stay athletic and healthy",
-  ]);
+  const [todos, setTodos] = useState([]);
+
+  useEffect(() => {
+    const todos = JSON.parse(localStorage.getItem("todos"));
+    if (todos) {
+      setTodos(todos);
+    }
+  }, []);
+
+  useEffect(() => {
+    localStorage.setItem("todos", JSON.stringify(todos));
+  }, [todos]);
 
   function addNewTodo(todo) {
-    console.log(todo);
-    setTodos(todos.concat(todo));
+    setTodos(todos.concat(new TodoModel(todo, false)));
   }
 
   return (

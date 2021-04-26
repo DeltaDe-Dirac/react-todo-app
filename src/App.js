@@ -1,8 +1,8 @@
 import React from "react";
-import { Container } from "react-bootstrap";
 import "./App.css";
 
 import ToDoPage from "./pages/ToDoPage/ToDoPage";
+// import ReactLogo from "./components/ReactLogo/ReactLogo";
 
 export default function App() {
   return (

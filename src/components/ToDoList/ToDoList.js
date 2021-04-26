@@ -1,7 +1,7 @@
 import React from "react";
 import "./ToDoList.css";
 import { v4 as uuidv4 } from "uuid";
-import { Container, ListGroup } from "react-bootstrap";
+import { ListGroup } from "react-bootstrap";
 
 export default function ToDoList({ todoList }) {
   return (
@@ -12,7 +12,7 @@ export default function ToDoList({ todoList }) {
             <div className="form-check form-switch">
               <input className="form-check-input" type="checkbox" id={`flexSwitchCheckDefault${index}`}></input>
               <label className="form-check-label" htmlFor={`flexSwitchCheckDefault${index}`}>
-                {todo}
+                {todo.text}
               </label>
             </div>
           </ListGroup.Item>
