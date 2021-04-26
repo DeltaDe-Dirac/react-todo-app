@@ -6,8 +6,9 @@
   position: relative;
   height: 100vh;
   margin: 0;
+  min-width: 630px;
 }
 
 .Todo-page-list {
-  margin: 20px;
+  padding: 20px;
 }
