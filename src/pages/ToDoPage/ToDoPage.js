@@ -8,6 +8,7 @@ import TodoModel from "../../model/TodoModel";
 
 export default function ToDoPage() {
   const [todos, setTodos] = useState([]);
+  const [filter, setFilter] = useState(null);
 
   useEffect(() => {
     const todos = JSON.parse(localStorage.getItem("todos"));
@@ -37,10 +38,10 @@ export default function ToDoPage() {
           <ToDoInput addNewTodo={addNewTodo} />
         </div>
         <div className="Todo-page-tabs">
-          <ToDoTabs />
+          <ToDoTabs todoList={todos} applyFilter={setFilter} />
         </div>
         <div className="Todo-page-list">
-          <ToDoList todoList={todos} toggleTodo={toggleTodo} />
+          <ToDoList todoList={todos} toggleTodo={toggleTodo} filter={filter} />
         </div>
       </Container>
     </div>

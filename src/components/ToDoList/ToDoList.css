@@ -8,9 +8,8 @@
 
 .Todo-list label {
   font-weight: bold;
-  /* color: rgb(13, 31, 128); */
 }
 
-.Todo-list .form-check-input {
-  /* background-color: paleturquoise; */
+.Todo-list .completed {
+  text-decoration: line-through;
 }
