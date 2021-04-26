@@ -6,7 +6,7 @@ export default function ToDoList() {
   return (
     <>
       <ListGroup variant="flush" className="Todo-list">
-        <ListGroup.Item>
+        <ListGroup.Item variant="dark">
           <div className="form-check form-switch">
             <input className="form-check-input" type="checkbox" id="flexSwitchCheckDefault1"></input>
             <label className="form-check-label" htmlFor="flexSwitchCheckDefault1">
@@ -14,7 +14,7 @@ export default function ToDoList() {
             </label>
           </div>
         </ListGroup.Item>
-        <ListGroup.Item>
+        <ListGroup.Item variant="dark">
           <div className="form-check form-switch">
             <input className="form-check-input" type="checkbox" id="flexSwitchCheckDefault2"></input>
             <label className="form-check-label" htmlFor="flexSwitchCheckDefault2">
@@ -22,7 +22,7 @@ export default function ToDoList() {
             </label>
           </div>
         </ListGroup.Item>
-        <ListGroup.Item>
+        <ListGroup.Item variant="dark">
           <div className="form-check form-switch">
             <input className="form-check-input" type="checkbox" id="flexSwitchCheckDefault3"></input>
             <label className="form-check-label" htmlFor="flexSwitchCheckDefault3">
@@ -30,7 +30,7 @@ export default function ToDoList() {
             </label>
           </div>
         </ListGroup.Item>
-        <ListGroup.Item>
+        <ListGroup.Item variant="dark">
           <div className="form-check form-switch">
             <input className="form-check-input" type="checkbox" id="flexSwitchCheckDefault4"></input>
             <label className="form-check-label" htmlFor="flexSwitchCheckDefault4">
@@ -38,7 +38,7 @@ export default function ToDoList() {
             </label>
           </div>
         </ListGroup.Item>
-        <ListGroup.Item>
+        <ListGroup.Item variant="dark">
           <div className="form-check form-switch">
             <input className="form-check-input" type="checkbox" id="flexSwitchCheckDefault5"></input>
             <label className="form-check-label" htmlFor="flexSwitchCheckDefault5">
@@ -46,7 +46,7 @@ export default function ToDoList() {
             </label>
           </div>
         </ListGroup.Item>
-        <ListGroup.Item>
+        <ListGroup.Item variant="dark">
           <div className="form-check form-switch">
             <input className="form-check-input" type="checkbox" id="flexSwitchCheckDefault6"></input>
             <label className="form-check-label" htmlFor="flexSwitchCheckDefault6">

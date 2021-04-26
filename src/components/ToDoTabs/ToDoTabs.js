@@ -8,17 +8,17 @@ export default function ToDoTabs() {
       <Nav variant="tabs" defaultActiveKey="/home">
         <Nav.Item>
           <Nav.Link eventKey="all">
-            All <Badge variant="secondary">9</Badge>
+            All <Badge variant="info">9</Badge>
           </Nav.Link>
         </Nav.Item>
         <Nav.Item>
           <Nav.Link eventKey="active">
-            Active <Badge variant="secondary">6</Badge>
+            Active <Badge variant="danger">6</Badge>
           </Nav.Link>
         </Nav.Item>
         <Nav.Item>
           <Nav.Link eventKey="completed">
-            Completed <Badge variant="secondary">3</Badge>
+            Completed <Badge variant="warning">3</Badge>
           </Nav.Link>
         </Nav.Item>
       </Nav>

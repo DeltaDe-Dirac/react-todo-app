@@ -1,9 +1,11 @@
 .Todo-title {
-  margin: 20px;
+  padding: 20px;
+  color: beige;
 }
 
 .Todo-input {
   /* background-color: #282c34; */
   width: 500px;
   margin: auto;
+  opacity: 0.8;
 }

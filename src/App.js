@@ -6,9 +6,9 @@ import ToDoPage from "./pages/ToDoPage/ToDoPage";
 
 export default function App() {
   return (
-    <Container className="App">
+    <div className="App">
       <ToDoPage />
       {/* <ReactLogo /> */}
-    </Container>
+    </div>
   );
 }

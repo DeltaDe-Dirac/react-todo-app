@@ -1,5 +1,16 @@
 .Todo-list {
-  width: 70vw;
+  min-width: 530px;
+  width: 60vw;
   margin: auto;
   font-size: large;
+  opacity: 0.6;
+}
+
+.Todo-list label {
+  font-weight: bold;
+  /* color: rgb(13, 31, 128); */
+}
+
+.Todo-list .form-check-input {
+  background-color: paleturquoise;
 }

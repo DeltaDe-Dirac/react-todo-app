@@ -7,16 +7,18 @@ import ToDoTabs from "../../components/ToDoTabs/ToDoTabs";
 
 export default function ToDoPage() {
   return (
-    <Container>
-      <div className="Todo-page-input">
-        <ToDoInput />
-      </div>
-      <div className="Todo-page-tabs">
-        <ToDoTabs />
-      </div>
-      <div className="Todo-page-list">
-        <ToDoList />
-      </div>
-    </Container>
+    <div className="Todo-page">
+      <Container>
+        <div className="Todo-page-input">
+          <ToDoInput />
+        </div>
+        <div className="Todo-page-tabs">
+          <ToDoTabs />
+        </div>
+        <div className="Todo-page-list">
+          <ToDoList />
+        </div>
+      </Container>
+    </div>
   );
 }
