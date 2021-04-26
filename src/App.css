@@ -1,13 +1,15 @@
-/* .App {
-  display: flex;
-  flex-direction: row;
-  background-color: #282c34;
+.App {
+  font-family: "New Tegomin", serif;
+  min-width: 530px;
+  /* display: flex;
+  flex-direction: row; */
+  /* background-color: #282c34; */
 }
 
 .ReactLogo {
-  flex: 1;
+  /* flex: 1; */
 }
 
 .ReactLogo-logo {
-  height: 20vmin;
-} */
+  /* height: 20vmin; */
+}
