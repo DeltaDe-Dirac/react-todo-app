@@ -8,7 +8,7 @@ import TodoModel from "../../model/TodoModel";
 
 export default function ToDoPage() {
   const [todos, setTodos] = useState([]);
-  const [filter, setFilter] = useState(null);
+  const [filter, setFilter] = useState("all");
 
   useEffect(() => {
     const todos = JSON.parse(localStorage.getItem("todos"));
