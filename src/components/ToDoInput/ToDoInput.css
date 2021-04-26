@@ -4,8 +4,7 @@
 }
 
 .Todo-input {
-  /* background-color: #282c34; */
-  /* width: 500px; */
+  max-width: 600px;
   margin: auto;
   opacity: 0.8;
 }

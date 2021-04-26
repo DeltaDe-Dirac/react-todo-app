@@ -5,7 +5,7 @@ import { Nav, Badge } from "react-bootstrap";
 export default function ToDoTabs() {
   return (
     <div className="Todo-tabs">
-      <Nav variant="tabs" defaultActiveKey="/home">
+      <Nav variant="tabs" defaultActiveKey="all">
         <Nav.Item>
           <Nav.Link eventKey="all">
             All <Badge variant="info">9</Badge>
