@@ -21,7 +21,13 @@ export default function ToDoPage() {
   }, [todos]);
 
   function addNewTodo(todo) {
-    setTodos(todos.concat(new TodoModel(todo, false)));
+    setTodos(todos.concat(new TodoModel(todos.length, todo, false)));
+  }
+
+  function toggleTodo(todoId) {
+    const todoIndex = todoId.split("-")[1];
+    todos[todoIndex].isCompleted = !todos[todoIndex].isCompleted;
+    setTodos([...todos]);
   }
 
   return (
@@ -34,7 +40,7 @@ export default function ToDoPage() {
           <ToDoTabs />
         </div>
         <div className="Todo-page-list">
-          <ToDoList todoList={todos} />
+          <ToDoList todoList={todos} toggleTodo={toggleTodo} />
         </div>
       </Container>
     </div>

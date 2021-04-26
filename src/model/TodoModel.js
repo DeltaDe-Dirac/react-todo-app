@@ -1,5 +1,6 @@
 export default class TodoModel {
-  constructor(text, isCompleted) {
+  constructor(id, text, isCompleted) {
+    this.id = "todoItem-".concat(id);
     this.text = text;
     this.isCompleted = isCompleted;
   }
