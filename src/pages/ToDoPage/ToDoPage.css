@@ -1,12 +1,9 @@
 .Todo-page {
-  background-image: url("pexels-dương-nhân.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
+  background: url("pexels-dương-nhân.jpg") no-repeat center fixed;
   background-size: cover;
-  position: relative;
-  height: 100vh;
+  /* position: relative; */
+  min-height: 100vh;
   margin: 0;
-  min-width: 630px;
 }
 
 .Todo-page-list {
