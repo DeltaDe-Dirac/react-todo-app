@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/react-todo-app/static/css/main.ffcaa68b.chunk.css",
-    "main.js": "/react-todo-app/static/js/main.43a48414.chunk.js",
-    "main.js.map": "/react-todo-app/static/js/main.43a48414.chunk.js.map",
-    "runtime-main.js": "/react-todo-app/static/js/runtime-main.3382c83a.js",
-    "runtime-main.js.map": "/react-todo-app/static/js/runtime-main.3382c83a.js.map",
-    "static/js/2.c0c9e1a4.chunk.js": "/react-todo-app/static/js/2.c0c9e1a4.chunk.js",
-    "static/js/2.c0c9e1a4.chunk.js.map": "/react-todo-app/static/js/2.c0c9e1a4.chunk.js.map",
-    "static/js/3.a36638d2.chunk.js": "/react-todo-app/static/js/3.a36638d2.chunk.js",
-    "static/js/3.a36638d2.chunk.js.map": "/react-todo-app/static/js/3.a36638d2.chunk.js.map",
+    "main.css": "/react-todo-app/static/css/main.8c616f62.chunk.css",
+    "main.js": "/react-todo-app/static/js/main.3bc182b5.chunk.js",
+    "main.js.map": "/react-todo-app/static/js/main.3bc182b5.chunk.js.map",
+    "runtime-main.js": "/react-todo-app/static/js/runtime-main.6a65a5f5.js",
+    "runtime-main.js.map": "/react-todo-app/static/js/runtime-main.6a65a5f5.js.map",
+    "static/js/2.d4aeaba4.chunk.js": "/react-todo-app/static/js/2.d4aeaba4.chunk.js",
+    "static/js/2.d4aeaba4.chunk.js.map": "/react-todo-app/static/js/2.d4aeaba4.chunk.js.map",
+    "static/js/3.86c6189c.chunk.js": "/react-todo-app/static/js/3.86c6189c.chunk.js",
+    "static/js/3.86c6189c.chunk.js.map": "/react-todo-app/static/js/3.86c6189c.chunk.js.map",
     "index.html": "/react-todo-app/index.html",
-    "static/css/main.ffcaa68b.chunk.css.map": "/react-todo-app/static/css/main.ffcaa68b.chunk.css.map",
-    "static/js/2.c0c9e1a4.chunk.js.LICENSE.txt": "/react-todo-app/static/js/2.c0c9e1a4.chunk.js.LICENSE.txt",
+    "static/css/main.8c616f62.chunk.css.map": "/react-todo-app/static/css/main.8c616f62.chunk.css.map",
+    "static/js/2.d4aeaba4.chunk.js.LICENSE.txt": "/react-todo-app/static/js/2.d4aeaba4.chunk.js.LICENSE.txt",
     "static/media/ToDoPage.css": "/react-todo-app/static/media/pexels-dương-nhân.fa8ae29e.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.3382c83a.js",
-    "static/js/2.c0c9e1a4.chunk.js",
-    "static/css/main.ffcaa68b.chunk.css",
-    "static/js/main.43a48414.chunk.js"
+    "static/js/runtime-main.6a65a5f5.js",
+    "static/js/2.d4aeaba4.chunk.js",
+    "static/css/main.8c616f62.chunk.css",
+    "static/js/main.3bc182b5.chunk.js"
   ]
 }
