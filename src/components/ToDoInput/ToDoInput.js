@@ -7,7 +7,7 @@ export default function ToDoInput({ addNewTodo }) {
   const formRef = createRef();
 
   function handleKeyPressed(e) {
-    if (e.target.value && e.code === "Enter") {
+    if (e.target.value && e.charCode === 13) {
       addNewTodo(e.target.value);
       findDOMNode(formRef.current).value = "";
     }
