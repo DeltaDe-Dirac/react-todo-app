@@ -8,6 +8,8 @@
 
 .Todo-list label {
   font-weight: bold;
+  display: block;
+  word-wrap: break-word;
 }
 
 .Todo-list .completed {
@@ -15,11 +17,19 @@
   color: gray;
 }
 
-.Todo-list .deleteToDo {
+.Todo-list svg {
   cursor: pointer;
   position: absolute;
-  left: 97%;
-  top: -30%;
+  left: 95%;
   color: red;
   font-size: 1.5em;
+  z-index: 10;
+}
+
+.Todo-list svg.showIcon {
+  visibility: visible;
+}
+
+.Todo-list svg.hideIcon {
+  visibility: hidden;
 }
