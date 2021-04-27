@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./ToDoPage.css";
-import { Container } from "react-bootstrap";
+import { Container, Button, Modal } from "react-bootstrap";
 import { v4 as uuidv4 } from "uuid";
 import ToDoInput from "../../components/ToDoInput/ToDoInput";
 import ToDoList from "../../components/ToDoList/ToDoList";
@@ -10,6 +10,8 @@ import TodoModel from "../../model/TodoModel";
 export default function ToDoPage() {
   const [todos, setTodos] = useState([]);
   const [filter, setFilter] = useState("all");
+  const [showModal, setShowModal] = useState(false);
+  let todoIndexToBeRemoved = -1;
 
   useEffect(() => {
     const todos = JSON.parse(localStorage.getItem("todos"));
@@ -38,14 +40,23 @@ export default function ToDoPage() {
   }
 
   function removeTodo(todoId) {
-    const todoIndex = getIndexById(todoId);
+    todoIndexToBeRemoved = getIndexById(todoId);
 
-    if (todoIndex === -1) {
+    if (todoIndexToBeRemoved === -1) {
       return;
     }
 
-    todos.splice(todoIndex, 1);
+    if (todos[todoIndexToBeRemoved].isCompleted) {
+      removeTodoByIndex();
+    } else {
+      setShowModal(true);
+    }
+  }
+
+  function removeTodoByIndex() {
+    todos.splice(todoIndexToBeRemoved, 1);
     setTodos([...todos]);
+    setShowModal(false);
   }
 
   function getIndexById(todoId) {
@@ -73,6 +84,20 @@ export default function ToDoPage() {
         <div className="Todo-page-list">
           <ToDoList todoList={todos} toggleTodo={toggleTodo} filter={filter} removeTodo={removeTodo} />
         </div>
+        <Modal show={showModal} onHide={setShowModal}>
+          <Modal.Header closeButton>
+            <Modal.Title>Delete Incomplete ToDo</Modal.Title>
+          </Modal.Header>
+          <Modal.Body>Are you sure you want to remove this item?</Modal.Body>
+          <Modal.Footer>
+            <Button variant="danger" onClick={() => removeTodoByIndex()}>
+              Delete
+            </Button>
+            <Button variant="primary" onClick={() => setShowModal(false)}>
+              Oh, No!
+            </Button>
+          </Modal.Footer>
+        </Modal>
       </Container>
     </div>
   );

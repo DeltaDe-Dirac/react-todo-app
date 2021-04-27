@@ -1,5 +1,4 @@
 import { createRef } from "react";
-import { findDOMNode } from "react-dom";
 import "./ToDoInput.css";
 import { InputGroup, FormControl } from "react-bootstrap";
 
@@ -9,7 +8,7 @@ export default function ToDoInput({ addNewTodo }) {
   function handleKeyPressed(e) {
     if (e.target.value && e.charCode === 13) {
       addNewTodo(e.target.value);
-      findDOMNode(formRef.current).value = "";
+      formRef.current.value = "";
     }
   }
 

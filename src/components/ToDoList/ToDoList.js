@@ -1,5 +1,4 @@
-import React, { useState, createRef } from "react";
-import { findDOMNode } from "react-dom";
+import React, { useState } from "react";
 import "./ToDoList.css";
 import { v4 as uuidv4 } from "uuid";
 import { ListGroup } from "react-bootstrap";
